@@ -103,35 +103,41 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
 
-    .navLinks,
     .utilityNav {
         display: none;
     }
 
-    .navLinks.open {
+    .navLinks {
         display: flex;
+        /* Always display to allow transition, but hide visually */
         flex-direction: column;
-        position: absolute;
-        top: var(--header-height);
-        left: 0;
-        right: 0;
-        background-color: var(--white);
-        height: calc(100vh - var(--header-height));
-        padding: 2rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        align-items: center;
-        gap: 1.5rem;
-        animation: slideInLeft 0.3s ease-in-out forwards;
-        z-index: 999;
-        align-items: flex-start;
-        /* Left align text */
-        padding: 100px 2rem 2rem;
-        /* Add top padding */
         position: fixed;
-        /* Fix to viewport */
         top: 0;
+        left: 0;
         bottom: 0;
         height: 100vh;
+        width: 100%;
+        background-color: var(--white);
+        padding: 100px 2rem 2rem;
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        align-items: flex-start;
+        gap: 1.5rem;
+        z-index: 999;
+
+        /* Transition properties */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        opacity: 0;
+        pointer-events: none;
+        /* Prevent clicks when closed */
+    }
+
+    .navLinks.open {
+        /* Active state */
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        /* Re-enable clicks */
     }
 
     .navLinks.open .navLink {
@@ -163,17 +169,5 @@
     .menuBtn {
         display: block;
         /* Ensure button is visible on mobile */
-    }
-}
-
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
