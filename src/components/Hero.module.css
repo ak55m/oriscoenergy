@@ -1,0 +1,201 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    /* Full viewport height for immersive feel */
+    width: 100%;
+    /* Background handled by Image Carousel in JS */
+    background-color: #021a2e;
+    /* Fallback */
+    color: var(--white);
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 120px;
+    /* More padding at bottom */
+    padding-top: var(--header-height);
+    /* Ensure content doesn't hit header if top aligned */
+    overflow: hidden;
+}
+
+.carouselContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /* Behind content */
+}
+
+.backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+            rgba(0, 49, 85, 0.3) 0%,
+            rgba(0, 49, 85, 0.7) 100%);
+    z-index: 2;
+    /* On top of image, behind content */
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    max-width: 1200px;
+    /* Expanded from 900px */
+    margin-left: 5%;
+    /* Slight left offset */
+    animation: fadeIn 1s ease-out;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-weight: 400;
+    max-width: 900px;
+    /* Expanded from 700px */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 20px;
+}
+
+.primaryBtn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--white);
+    color: var(--primary-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+    /* Rounded corners */
+    /* Sharp corners */
+    transition: all 0.2s ease;
+    border: 2px solid var(--white);
+}
+
+.primaryBtn:hover {
+    background-color: transparent;
+    color: var(--white);
+}
+
+.secondaryBtn {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: var(--secondary-blue);
+    border: 2px solid var(--secondary-blue);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.secondaryBtn:hover {
+    background-color: #1a65c0;
+    border-color: #1a65c0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 500px;
+        align-items: center;
+        /* Center on mobile */
+        padding-bottom: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+        width: 100%;
+    }
+}
+
+/* Splash Screen Styles */
+.splashScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    /* White loading screen */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splashLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--primary-blue);
+    /* Dark text for white background */
+    gap: 16px;
+}
+
+.splashIcon {
+    color: var(--secondary-blue);
+    filter: drop-shadow(0 0 10px rgba(42, 125, 225, 0.5));
+}
+
+.splashText {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.splashText span {
+    color: var(--secondary-blue);
+}

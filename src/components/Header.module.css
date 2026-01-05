@@ -1,0 +1,138 @@
+.header {
+    position: absolute;
+    /* Overlay on top of Hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    /* Transparent background */
+    /* Remove shadow for transparency or keep subtle if needed, but usually none for overlay */
+    box-shadow: none;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    /* Subtle border removed per user request */
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--white);
+    /* White logo on dark image */
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Orisco Hallmark: The "Energy" part can be a different color or weight */
+.logo span {
+    color: var(--secondary-blue);
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.navLink {
+    font-size: 0.9rem;
+    font-weight: 700;
+    /* Bolder text like Chevron */
+    color: var(--white);
+    /* White text for overlay */
+    transition: color 0.2s ease;
+    position: relative;
+    padding: 8px 0;
+    display: flex;
+    /* alignment for icon */
+    align-items: center;
+    gap: 4px;
+}
+
+.navLink:hover {
+    color: #d3d3d3;
+    /* Light grey on hover */
+}
+
+/* Remove the underline effect, Chevron typically uses color change or full dropdown */
+.navLink::after {
+    display: none;
+}
+
+.utilityNav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.searchBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.menuBtn {
+    display: none;
+    /* Hidden on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+
+    .navLinks,
+    .utilityNav {
+        display: none;
+    }
+
+    .navLinks.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        height: calc(100vh - var(--header-height));
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        gap: 2rem;
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    .navLinks.open .navLink {
+        font-size: 1.2rem;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
