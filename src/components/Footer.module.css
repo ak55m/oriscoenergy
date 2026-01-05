@@ -1,8 +1,9 @@
 .footer {
-    background-color: #f8f9fa;
-    padding: 60px 0 30px;
-    border-top: 1px solid var(--border-color);
-    margin-top: 60px;
+    background-color: var(--white);
+    /* White background */
+    padding: 40px 0 30px;
+    border-top: 1px solid #eee;
+    margin-top: 0;
 }
 
 .grid {

@@ -1,0 +1,164 @@
+.newsSection {
+    padding: 80px 0 20px;
+    /* Reduced bottom padding */
+    background-color: #f9f9f9;
+    position: relative;
+    /* For arrow positioning context if needed */
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+.sectionHeader h2 {
+    font-size: 2rem;
+    color: var(--secondary-blue);
+}
+
+.viewAll {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-blue);
+    font-weight: 600;
+}
+
+.carouselContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    min-width: 350px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* border-bottom removed */
+    background: white;
+    /* Ensure card has background */
+    padding-bottom: 20px;
+}
+
+.card:hover {
+    /* No hover effect */
+}
+
+.cardImage {
+    height: 200px;
+    background-color: #eee;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.cardContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    /* Add some padding inside card */
+}
+
+.cardTag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--primary-blue);
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.readMore {
+    font-weight: 700;
+    color: var(--secondary-blue);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* Navigation Buttons */
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    color: var(--primary-blue);
+    transition: all 0.2s ease;
+}
+
+.navButton:hover {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    border-color: var(--secondary-blue);
+}
+
+.prevButton {
+    left: -24px;
+}
+
+.nextButton {
+    right: -24px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        min-width: 85vw;
+    }
+
+    .navButton {
+        display: none;
+        /* Hide arrows on mobile, use swipe */
+    }
+
+    .prevButton {
+        left: 0px;
+    }
+
+    .nextButton {
+        right: 0px;
+    }
+}
