@@ -60,6 +60,11 @@
     gap: 4px;
 }
 
+.mobileArrow {
+    display: none;
+    /* Hide on desktop */
+}
+
 .navLink:hover {
     color: #d3d3d3;
     /* Light grey on hover */
@@ -90,6 +95,9 @@
     border: none;
     cursor: pointer;
     color: var(--white);
+    z-index: 1001;
+    /* Above mobile menu */
+    position: relative;
 }
 
 /* Mobile Responsiveness */
@@ -112,27 +120,60 @@
         padding: 2rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         align-items: center;
-        gap: 2rem;
-        animation: slideDown 0.3s ease-in-out;
+        gap: 1.5rem;
+        animation: slideInLeft 0.3s ease-in-out forwards;
+        z-index: 999;
+        align-items: flex-start;
+        /* Left align text */
+        padding: 100px 2rem 2rem;
+        /* Add top padding */
+        position: fixed;
+        /* Fix to viewport */
+        top: 0;
+        bottom: 0;
+        height: 100vh;
     }
 
     .navLinks.open .navLink {
         font-size: 1.2rem;
+        color: var(--primary-blue);
+        /* Dark text */
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        /* Text left, Arrow right */
+        border-bottom: 1px solid #f0f0f0;
+        padding-bottom: 15px;
+    }
+
+    .desktopArrow {
+        display: none;
+    }
+
+    .mobileArrow {
+        display: block;
+        /* Show on mobile */
+    }
+
+    .navLinks.open~.menuBtn {
+        color: var(--primary-blue);
+        /* Dark button on white menu */
     }
 
     .menuBtn {
         display: block;
+        /* Ensure button is visible on mobile */
     }
 }
 
-@keyframes slideDown {
+@keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateX(-100%);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }

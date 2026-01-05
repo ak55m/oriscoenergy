@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
-import { Search, Menu, X, Zap, ChevronDown } from 'lucide-react';
+import { Search, Menu, X, Zap, ChevronDown, ChevronRight } from 'lucide-react';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -21,19 +21,29 @@ export default function Header() {
         {/* Mobile Menu Overlay */}
         <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            Company <ChevronDown size={14} />
+            <span>Company</span>
+            <ChevronDown size={14} className={styles.desktopArrow} />
+            <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            Operations <ChevronDown size={14} />
+            <span>Operations</span>
+            <ChevronDown size={14} className={styles.desktopArrow} />
+            <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            Sustainability <ChevronDown size={14} />
+            <span>Sustainability</span>
+            <ChevronDown size={14} className={styles.desktopArrow} />
+            <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            Investors <ChevronDown size={14} />
+            <span>Investors</span>
+            <ChevronDown size={14} className={styles.desktopArrow} />
+            <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            Careers
+            <span>Careers</span>
+            {/* No desktop arrow for Careers usually, but consistency for mobile */}
+            <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
         </nav>
 
@@ -49,7 +59,7 @@ export default function Header() {
           aria-label="Toggle menu"
           aria-expanded={isMenuOpen}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? <X size={24} color="#003155" /> : <Menu size={24} />}
         </button>
       </div>
     </header>

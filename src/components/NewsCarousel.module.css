@@ -161,4 +161,10 @@
     .nextButton {
         right: 0px;
     }
+
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
