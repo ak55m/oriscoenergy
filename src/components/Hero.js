@@ -7,11 +7,11 @@ import styles from './Hero.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const heroImages = [
-    'https://images.unsplash.com/photo-1722183704200-e96339975ba4?q=80&w=3540&auto=format&fit=crop', // User selected: Oil rig (New Selection)
-    'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop', // Cinematic solar/sunset
-    'https://images.unsplash.com/photo-1699588999922-730553a918d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // User selected: Wind Turbines (Updated)
-    'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=2070&auto=format&fit=crop', // Power lines/Blue sky
-    'https://images.unsplash.com/photo-1678532685208-54acdd41187d?q=80&w=2342&auto=format&fit=crop', // User selected: Dark texture (Abstract)
+    'https://images.unsplash.com/photo-1722183704200-e96339975ba4?q=80&w=3540&auto=format&fit=crop', // Oil rig
+    'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=2070&auto=format&fit=crop', // Power lines
+    'https://images.unsplash.com/photo-1699588999922-730553a918d0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Oil tanker
+    'https://images.unsplash.com/photo-1592685615249-c7939d6f9be7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Wind turbines
+    'https://images.unsplash.com/photo-1678532685208-54acdd41187d?q=80&w=2342&auto=format&fit=crop', // Refinery
 ];
 
 export default function Hero() {
