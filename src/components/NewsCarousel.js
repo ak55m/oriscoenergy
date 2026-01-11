@@ -7,12 +7,6 @@ import styles from './NewsCarousel.module.css';
 
 const newsItems = [
     {
-        tag: 'Press Release',
-        title: 'Orisco Energy announces Q4 Financial Results',
-        description: 'Strong operational performance leads to record cash flow for the fiscal year.',
-        gradient: 'linear-gradient(to bottom right, #ddd, #bbb)'
-    },
-    {
         tag: 'Sustainability',
         title: 'Advancing lower carbon energy',
         description: 'New initiatives launched to reduce carbon intensity across our global operations.',

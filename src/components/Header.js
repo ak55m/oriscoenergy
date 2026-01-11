@@ -1,17 +1,21 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Search, Menu, X, Zap, ChevronDown, ChevronRight } from 'lucide-react';
 import styles from './Header.module.css';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isLightTheme = pathname === '/team' || pathname === '/operations';
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isLightTheme ? styles.lightTheme : ''}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Zap size={28} fill="currentColor" />
@@ -22,22 +26,18 @@ export default function Header() {
         <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
             <span>Company</span>
-            <ChevronDown size={14} className={styles.desktopArrow} />
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
-          <Link href="#" className={styles.navLink} onClick={closeMenu}>
+          <Link href="/operations" className={styles.navLink} onClick={closeMenu}>
             <span>Operations</span>
-            <ChevronDown size={14} className={styles.desktopArrow} />
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>
             <span>Sustainability</span>
-            <ChevronDown size={14} className={styles.desktopArrow} />
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
-          <Link href="#" className={styles.navLink} onClick={closeMenu}>
-            <span>Investors</span>
-            <ChevronDown size={14} className={styles.desktopArrow} />
+          <Link href="/team" className={styles.navLink} onClick={closeMenu}>
+            <span>Team</span>
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
           <Link href="#" className={styles.navLink} onClick={closeMenu}>

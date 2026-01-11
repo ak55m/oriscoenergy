@@ -31,7 +31,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.sectionHeader}>
             <h2>What We Do</h2>
-            <Link href="#" className={styles.viewAll}>
+            <Link href="/operations" className={styles.viewAll}>
               View All Operations <ChevronRight size={16} />
             </Link>
           </div>

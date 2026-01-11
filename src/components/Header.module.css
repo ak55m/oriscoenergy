@@ -171,3 +171,23 @@
         /* Ensure button is visible on mobile */
     }
 }
+
+/* Light Theme Overrides */
+.lightTheme {
+    background-color: var(--white);
+    box-shadow: none;
+    border-bottom: none;
+    position: relative;
+    /* Not absolute on team page if preferred, but usually keep fixed/absolute */
+}
+
+.lightTheme .logo,
+.lightTheme .navLink,
+.lightTheme .searchBtn,
+.lightTheme .menuBtn {
+    color: var(--primary-blue);
+}
+
+.lightTheme .navLink:hover {
+    color: var(--secondary-blue);
+}
