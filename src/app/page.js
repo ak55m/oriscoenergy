@@ -2,6 +2,7 @@ import Hero from '@/components/Hero';
 import NewsCarousel from '@/components/NewsCarousel';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
+import { services } from '@/data/services';
 import styles from './page.module.css';
 
 export default function Home() {
@@ -37,32 +38,22 @@ export default function Home() {
           </div>
 
           <div className={styles.grid}>
-            {/* Card 1 */}
-            <article className={styles.card}>
-              <div className={styles.cardImage} style={{ background: 'linear-gradient(to bottom right, #2a9d8f, #264653)' }}></div>
-              <div className={styles.cardContent}>
-                <h3>Oil & Gas</h3>
-                <p>Responsible exploration and production to power the world.</p>
-              </div>
-            </article>
-
-            {/* Card 2 */}
-            <article className={styles.card}>
-              <div className={styles.cardImage} style={{ background: 'linear-gradient(to bottom right, #f4a261, #e76f51)' }}></div>
-              <div className={styles.cardContent}>
-                <h3>New Energies</h3>
-                <p>Investing in hydrogen, carbon capture, and renewables.</p>
-              </div>
-            </article>
-
-            {/* Card 3 */}
-            <article className={styles.card}>
-              <div className={styles.cardImage} style={{ background: 'linear-gradient(to bottom right, #457b9d, #1d3557)' }}></div>
-              <div className={styles.cardContent}>
-                <h3>Technology</h3>
-                <p>Leveraging digital innovation to drive efficiency and safety.</p>
-              </div>
-            </article>
+            {services.slice(0, 3).map((service, index) => (
+              <article key={index} className={styles.card}>
+                <div
+                  className={styles.cardImage}
+                  style={{
+                    background: index === 0 ? 'linear-gradient(to bottom right, #2a9d8f, #264653)' :
+                      index === 1 ? 'linear-gradient(to bottom right, #f4a261, #e76f51)' :
+                        'linear-gradient(to bottom right, #457b9d, #1d3557)'
+                  }}
+                ></div>
+                <div className={styles.cardContent}>
+                  <h3>{service}</h3>
+                  <p>Comprehensive {service.toLowerCase()} solutions for the energy sector.</p>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

@@ -1,4 +1,6 @@
 import styles from './page.module.css';
+import { services } from '@/data/services';
+
 
 export const metadata = {
     title: 'Operations & Services | Orisco Energy',
@@ -6,32 +8,6 @@ export const metadata = {
 };
 
 export default function OperationsPage() {
-    const services = [
-        "Construction (Industrial, Infrastructure and Building)",
-        "Developments of Operating procedures (Project Execution Plan (PEP), Commissioning, Start-up, Shutdown etc.)",
-        "Engineering (Mechanical, Electrical and SCADA)",
-        "Heavy duty machinery procurement, Installation and operations",
-        "Instrumentation and Control",
-        "Major Electrification and Street Light Projects",
-        "Manpower Supply and Consultancy",
-        "Marine services (Passengers boat, Tugboat, Barge and Houseboat supply etc.)",
-        "Operations and Maintenance (O&M) Training and Support",
-        "Operations and Maintenance services",
-        "Pre-commissioning, Commissioning and Start-up of Oil and Gas Facilities",
-        "Procurement and Support Services",
-        "Project Development and Management",
-        "Purchase and Marketing of Petroleum Products",
-        "Quality Control & Inspection",
-        "Refinery and Process Plant Maintenance and Operations",
-        "Road and Drainage construction",
-        "Safety and Environmental services",
-        "Site Dredging and Supply of movable equipment",
-        "Supply of Electrical and Mechanical parts",
-        "Turnaround Maintenance (TAM) Support",
-        "Transportation and Haulage Services",
-        "Troubleshooting of Process Plant Shutdowns"
-    ];
-
     return (
         <div className={styles.container}>
             <header className={styles.heroHeader}>
@@ -42,6 +18,19 @@ export default function OperationsPage() {
                     </p>
                 </div>
             </header>
+
+            <section className={styles.introSection}>
+                <h2>OUR OPERATIONS</h2>
+                <p>
+                    Orisco Energy integrated approach means contributing to the development of Nigeria Oil & gas sector. We believe that oil & gas producing nation should be self-suﬃcient in term of energy supply.
+                </p>
+                <p>
+                    We build a relationship of trust with our partners and create sustainable long-term values. Our services are oﬀered at aﬀordable and fair competitive prices and are commensurate with high quality products and services. Orisco Energy is made up of high skilled and dedicated professionals that provide our client with expertise and eﬃcient services.
+                </p>
+                <p>
+                    Orisco Energy engages in the operation and maintenance of Refineries, Oil and Gas Production Facilities (Land, Onshore and Oﬀshore) and other sectors outside the Oil Industry.
+                </p>
+            </section>
 
             <section>
                 <div className={styles.servicesGrid}>

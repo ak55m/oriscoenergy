@@ -9,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isLightTheme = pathname === '/team' || pathname === '/operations';
+  const isLightTheme = pathname === '/team' || pathname === '/operations' || pathname === '/company';
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -24,7 +24,7 @@ export default function Header() {
 
         {/* Mobile Menu Overlay */}
         <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
-          <Link href="#" className={styles.navLink} onClick={closeMenu}>
+          <Link href="/company" className={styles.navLink} onClick={closeMenu}>
             <span>Company</span>
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>

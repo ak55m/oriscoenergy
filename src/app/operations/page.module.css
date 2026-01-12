@@ -35,6 +35,28 @@
     margin: 0 auto;
     opacity: 0.9;
     line-height: 1.6;
+
+}
+
+.introSection {
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.introSection h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 1.5rem;
+}
+
+.introSection p {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
 }
 
 .servicesGrid {
