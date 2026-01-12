@@ -17,16 +17,7 @@ export default function SustainabilityPage() {
                 </div>
             </header>
 
-            <section className={styles.section}>
-                <div className={styles.sectionHeader}>
-                    <h2>Our Approach</h2>
-                </div>
-                <div className={styles.contentBlock}>
-                    <p>
-                        [Content regarding Orisco Energy's general approach to sustainability goes here. This section will outline the core philosophy of balancing energy needs with environmental responsibility.]
-                    </p>
-                </div>
-            </section>
+
 
             <section className={styles.section}>
                 <div className={styles.sectionHeader}>
@@ -43,6 +34,25 @@ export default function SustainabilityPage() {
                     <br />
                     <p>
                         Orisco Energy shall put in place all necessary regulations/legislations on environmental issue by the Government of the Federal Republic of Nigeria and its appropriate agencies such as Federal Environmental Protection Agency (FEPA) and Local Government Authority and Ministry of Health.
+                    </p>
+                </div>
+            </section>
+
+            <section className={styles.section}>
+                <div className={styles.sectionHeader}>
+                    <h2>OCCUPATIONAL HEALTH POLICY</h2>
+                </div>
+                <div className={styles.contentBlock}>
+                    <p>
+                        All staﬀ of Orisco Energy shall be medically fit and shall remain so, during their employment and ensure fitness for duty prior to mobilization to site according to company policy.
+                    </p>
+                    <br />
+                    <p>
+                        We shall maintain an insurance against any liability that may result in case of any personnel suﬀering occupational disease or any impairment to health resulting from our operation. The company&apos;s retained clinic shall handle all routine medical and medical emergencies. Only certified and competent First Aider and nurse can man the first aid box and administer first aid in any operational areas. Records of medications administered, or injuries must be kept at site and base oﬃce.
+                    </p>
+                    <br />
+                    <p>
+                        Orisco Energy is committed to protecting the health and safety of every individual that is involved with her activities which includes clients, employees, consultants, contractors and communities in which we operate. Each member of staﬀ will be made to report any unsafe behaviors and conditions noticed within the work site and ensure is addressed timely to prevent incident or accident.
                     </p>
                 </div>
             </section>
