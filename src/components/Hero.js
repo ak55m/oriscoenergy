@@ -70,7 +70,7 @@ export default function Hero() {
                     </p>
 
                     <div className={styles.ctaGroup}>
-                        <Link href="#" className={styles.primaryBtn}>
+                        <Link href="/sustainability" className={styles.primaryBtn}>
                             Our Strategy
                         </Link>
                         <Link href="/operations" className={styles.secondaryBtn}>

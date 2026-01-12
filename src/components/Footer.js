@@ -11,7 +11,7 @@ export default function Footer() {
                         <ul>
                             <li><Link href="#">About Orisco</Link></li>
                             <li><Link href="#">Leadership</Link></li>
-                            <li><Link href="#">Careers</Link></li>
+                            <li><Link href="/careers">Careers</Link></li>
                             <li><Link href="#">Contact</Link></li>
                         </ul>
                     </div>

@@ -9,7 +9,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const isLightTheme = pathname === '/team' || pathname === '/operations' || pathname === '/company';
+  const isLightTheme = pathname === '/team' || pathname === '/operations' || pathname === '/company' || pathname === '/sustainability' || pathname === '/careers';
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -32,7 +32,7 @@ export default function Header() {
             <span>Operations</span>
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
-          <Link href="#" className={styles.navLink} onClick={closeMenu}>
+          <Link href="/sustainability" className={styles.navLink} onClick={closeMenu}>
             <span>Sustainability</span>
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
@@ -40,7 +40,7 @@ export default function Header() {
             <span>Team</span>
             <ChevronRight size={20} className={styles.mobileArrow} />
           </Link>
-          <Link href="#" className={styles.navLink} onClick={closeMenu}>
+          <Link href="/careers" className={styles.navLink} onClick={closeMenu}>
             <span>Careers</span>
             {/* No desktop arrow for Careers usually, but consistency for mobile */}
             <ChevronRight size={20} className={styles.mobileArrow} />

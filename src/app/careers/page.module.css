@@ -1,0 +1,65 @@
+.container {
+    min-height: 100vh;
+    padding: 40px 20px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.heroHeader {
+    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2084&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 2rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+}
+
+.heroHeader h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroHeader p {
+    font-size: 1.25rem;
+    color: var(--white);
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem 6rem;
+    text-align: center;
+}
+
+.messageBox {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 4rem 2rem;
+    border: 1px solid #e9ecef;
+}
+
+.messageBox h2 {
+    font-size: 2rem;
+    color: #003155;
+    margin-bottom: 1rem;
+}
+
+.messageBox p {
+    font-size: 1.125rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
