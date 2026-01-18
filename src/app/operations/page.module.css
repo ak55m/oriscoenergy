@@ -5,7 +5,7 @@
 }
 
 .heroHeader {
-    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?q=80&w=2369&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('/images/gas-flare-stack.png');
     background-size: cover;
     background-position: center;
     color: var(--white);

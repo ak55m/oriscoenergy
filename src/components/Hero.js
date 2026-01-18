@@ -62,16 +62,16 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.2 }}
                 >
                     <h1 className={styles.title}>
-                        Powering the Future with<br />
-                        Sustainable Energy.
+                        Oil and gas operations,<br />
+                        built on engineering excellence.
                     </h1>
                     <p className={styles.subtitle}>
                         Orisco Energy is committed to delivering affordable, reliable, and ever-cleaner energy to enable human progress.
                     </p>
 
                     <div className={styles.ctaGroup}>
-                        <Link href="/sustainability" className={styles.primaryBtn}>
-                            Our Strategy
+                        <Link href="/company" className={styles.primaryBtn}>
+                            Our Company
                         </Link>
                         <Link href="/operations" className={styles.secondaryBtn}>
                             View Operations

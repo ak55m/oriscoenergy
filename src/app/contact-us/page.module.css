@@ -1,0 +1,161 @@
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+.heroHeader {
+    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('/images/contact-hero.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+    padding: 6rem 2rem;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    border-radius: 12px;
+}
+
+.heroHeader h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--white);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heroHeader p {
+    font-size: 1.1rem;
+    color: var(--white);
+    max-width: 760px;
+    margin: 0 auto;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.section {
+    margin-bottom: 4rem;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.sectionHeader h2 {
+    font-size: 2.4rem;
+    color: var(--primary-blue);
+    margin-bottom: 0.75rem;
+}
+
+.sectionHeader p {
+    color: var(--text-light);
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+}
+
+.detailsCard,
+.formCard {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 28px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.detailsCard h3 {
+    color: var(--primary-blue);
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+}
+
+.detailList {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+    color: var(--text-dark);
+}
+
+.detailLabel {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.formCard {
+    display: grid;
+    gap: 18px;
+}
+
+.formRow {
+    display: grid;
+    gap: 8px;
+}
+
+.formRow label {
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.formRow input,
+.formRow textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d7dee6;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background-color: #f9fbfd;
+}
+
+.formRow input:focus,
+.formRow textarea:focus {
+    outline: 2px solid rgba(42, 125, 225, 0.2);
+    border-color: rgba(42, 125, 225, 0.6);
+    background-color: #ffffff;
+}
+
+.submitBtn {
+    border: none;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 14px 20px;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    justify-self: start;
+}
+
+.submitBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 40, 85, 0.2);
+}
+
+@media (max-width: 768px) {
+    .heroHeader {
+        padding: 4rem 1.5rem;
+        min-height: 40vh;
+    }
+
+    .sectionHeader h2 {
+        font-size: 2rem;
+    }
+
+    .submitBtn {
+        width: 100%;
+        justify-self: stretch;
+    }
+}

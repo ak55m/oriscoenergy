@@ -24,20 +24,17 @@
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--white);
-    /* White logo on dark image */
-    text-transform: uppercase;
-    letter-spacing: -0.5px;
     display: flex;
     align-items: center;
     gap: 8px;
+    line-height: 0;
 }
 
-/* Orisco Hallmark: The "Energy" part can be a different color or weight */
-.logo span {
-    color: var(--secondary-blue);
+.logoImage {
+    width: clamp(48px, 7vw, 72px);
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.18));
 }
 
 .navLinks {

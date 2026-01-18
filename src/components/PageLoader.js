@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Zap } from 'lucide-react';
+import Image from 'next/image';
 import styles from './PageLoader.module.css';
 
 export default function PageLoader() {
@@ -18,10 +18,14 @@ export default function PageLoader() {
                 transition={{ repeat: Infinity, duration: 1.5, repeatType: "reverse" }}
                 className={styles.splashLogo}
             >
-                <Zap size={64} fill="currentColor" className={styles.splashIcon} />
-                <div className={styles.splashText}>
-                    Orisco <span>Energy</span>
-                </div>
+                <Image
+                    src="/logo_loader_v4.png"
+                    alt="Orisco Energy"
+                    width={220}
+                    height={80}
+                    className={styles.splashLogoImage}
+                    priority
+                />
             </motion.div>
         </motion.div>
     );

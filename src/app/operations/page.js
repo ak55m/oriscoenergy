@@ -12,23 +12,20 @@ export default function OperationsPage() {
         <div className={styles.container}>
             <header className={styles.heroHeader}>
                 <div style={{ position: 'relative', zIndex: 10 }}>
-                    <h1>Scope of Services</h1>
+                    <h1>Operations</h1>
                     <p>
-                        Our broad capability enables us to offer a wide range of specialized services.
+                        Our broad capability enables us to offer a wide range of specialized services that support critical energy and infrastructure operations.
                     </p>
                 </div>
             </header>
 
             <section className={styles.introSection}>
-                <h2>OUR OPERATIONS</h2>
-                <p>
-                    Orisco Energy integrated approach means contributing to the development of Nigeria Oil & gas sector. We believe that oil & gas producing nation should be self-suﬃcient in term of energy supply.
-                </p>
                 <p>
                     We build a relationship of trust with our partners and create sustainable long-term values. Our services are oﬀered at aﬀordable and fair competitive prices and are commensurate with high quality products and services. Orisco Energy is made up of high skilled and dedicated professionals that provide our client with expertise and eﬃcient services.
                 </p>
+                <h2>Scope of Services</h2>
                 <p>
-                    Orisco Energy engages in the operation and maintenance of Refineries, Oil and Gas Production Facilities (Land, Onshore and Oﬀshore) and other sectors outside the Oil Industry.
+                    Our broad capability enables us to offer a wide range of specialized services.
                 </p>
             </section>
 

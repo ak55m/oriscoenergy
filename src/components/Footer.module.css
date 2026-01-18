@@ -8,9 +8,11 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
     margin-bottom: 40px;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .col h4 {
@@ -22,10 +24,13 @@
 
 .col ul {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 
 .col li {
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
 
 .col a {
@@ -51,6 +56,16 @@
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .col ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .col li {
+        margin-bottom: 0;
     }
 
     .bottom {

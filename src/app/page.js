@@ -1,5 +1,4 @@
 import Hero from '@/components/Hero';
-import NewsCarousel from '@/components/NewsCarousel';
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { services } from '@/data/services';
@@ -38,14 +37,21 @@ export default function Home() {
           </div>
 
           <div className={styles.grid}>
-            {services.slice(0, 3).map((service, index) => (
+            {services.slice(0, 4).map((service, index) => (
               <article key={index} className={styles.card}>
                 <div
                   className={styles.cardImage}
                   style={{
-                    background: index === 0 ? 'linear-gradient(to bottom right, #2a9d8f, #264653)' :
-                      index === 1 ? 'linear-gradient(to bottom right, #f4a261, #e76f51)' :
-                        'linear-gradient(to bottom right, #457b9d, #1d3557)'
+                    backgroundImage: index === 0
+                      ? "url('/images/construction-image.png')"
+                      : index === 1
+                        ? "url('/images/development-operations.png')"
+                      : index === 2
+                        ? "url('/images/engineering-image.png')"
+                        : "url('/images/heavy-duty-image.png')",
+                    backgroundSize: index === 0 || index === 1 || index === 2 || index === 3 ? 'cover' : 'auto',
+                    backgroundPosition: index === 0 || index === 1 || index === 2 || index === 3 ? 'center' : 'initial',
+                    backgroundRepeat: 'no-repeat'
                   }}
                 ></div>
                 <div className={styles.cardContent}>
@@ -58,8 +64,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3. Newsroom Section (Carousel) */}
-      <NewsCarousel />
     </>
   );
 }

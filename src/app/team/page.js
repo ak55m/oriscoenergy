@@ -34,7 +34,7 @@ His expertise has taken him beyond Nigeria to countries such as the **UK, the US
     const teamMembers = [
         {
             name: "Mohammed Usman Anyanokhabor",
-            role: "MD, Orisco Energy Limited",
+            role: "Managing Director, P.M",
             bio: "Managing Director with over three decades of outstanding contributions to the energy industry, spanning project leadership and production optimization.",
             details: `Mohammed Usman Anyanokhabor is the Managing Director of Orisco Energy Limited, with over three decades of outstanding contributions to the energy industry. His extensive experience spans project leadership, engineering management, production optimization, and corporate governance, making him a respected figure in both local and international energy circles.
 
@@ -101,7 +101,7 @@ In 2021, he joined Orisco Energy Limited as a Project Manager, where he successf
                 <div style={{ position: 'relative', zIndex: 10 }}>
                     <h1>Leadership & Team</h1>
                     <p>
-                        Meet the experienced professionals dedicated to delivering solutions for the future.
+                        Meet the professionals delivering reliable, safe, and efficient energy services.
                     </p>
                 </div>
             </header>
@@ -112,8 +112,8 @@ In 2021, he joined Orisco Energy Limited as a Project Manager, where he successf
                     {/* <img src="/path-to-ceo-image.jpg" alt="CEO Name" className={styles.ceoImage} /> */}
                 </div>
                 <div className={styles.ceoContent}>
-                    <h2>Managing Director / CEO</h2>
-                    <span className={styles.role}>James Oritse</span>
+                    <h2>James Oritse</h2>
+                    <span className={styles.role}>Chief Executive Officer (C.E.O)</span>
                     <p className={styles.bio}>
                         Our CEO and Managing Director brings over 30 years of multinational oil and gas industry experience. A pioneer of the Escravos Gas Plant and a distinguished alumnus of the Petroleum Training Institute, he leads Orisco Energy with a focus on technical excellence and operational discipline.
                     </p>

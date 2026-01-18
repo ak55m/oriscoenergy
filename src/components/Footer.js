@@ -7,39 +7,12 @@ export default function Footer() {
             <div className="container">
                 <div className={styles.grid}>
                     <div className={styles.col}>
-                        <h4>Company</h4>
                         <ul>
-                            <li><Link href="#">About Orisco</Link></li>
-                            <li><Link href="#">Leadership</Link></li>
+                            <li><Link href="/company">About Us</Link></li>
+                            <li><Link href="/team">Team</Link></li>
+                            <li><Link href="/gallery">Gallery</Link></li>
+                            <li><Link href="/contact-us">Contact Us</Link></li>
                             <li><Link href="/careers">Careers</Link></li>
-                            <li><Link href="#">Contact</Link></li>
-                        </ul>
-                    </div>
-                    <div className={styles.col}>
-                        <h4>Operations</h4>
-                        <ul>
-                            <li><Link href="#">Exploration</Link></li>
-                            <li><Link href="#">Production</Link></li>
-                            <li><Link href="#">Processing</Link></li>
-                            <li><Link href="#">Technology</Link></li>
-                        </ul>
-                    </div>
-                    <div className={styles.col}>
-                        <h4>Sustainability</h4>
-                        <ul>
-                            <li><Link href="#">Environment</Link></li>
-                            <li><Link href="#">Social Responsibility</Link></li>
-                            <li><Link href="#">Reports</Link></li>
-                            <li><Link href="#">Climate Change</Link></li>
-                        </ul>
-                    </div>
-                    <div className={styles.col}>
-                        <h4>Investors</h4>
-                        <ul>
-                            <li><Link href="#">Stock Information</Link></li>
-                            <li><Link href="#">Financial Reports</Link></li>
-                            <li><Link href="#">Events & Presentations</Link></li>
-                            <li><Link href="#">Shareholder Services</Link></li>
                         </ul>
                     </div>
                 </div>
