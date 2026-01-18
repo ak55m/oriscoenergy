@@ -78,6 +78,22 @@
     }
 }
 
+@media (max-width: 768px) {
+    .heroHeader {
+        padding: 4rem 1.5rem;
+        min-height: 40vh;
+    }
+
+    .heroHeader h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+        word-break: break-word;
+    }
+
+    .heroHeader p {
+        font-size: 1.05rem;
+    }
+}
+
 .serviceCard {
     background: var(--white);
     border: 1px solid var(--border-color);

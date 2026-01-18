@@ -106,8 +106,8 @@
 
 @media (max-width: 768px) {
     .heroHeader {
-        padding: 4rem 1.5rem;
-        min-height: 40vh;
+        padding: 0;
+        min-height: auto;
     }
 
     .sectionHeader h2 {

@@ -206,6 +206,13 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .header {
+        height: 64px;
+    }
+
+    .navContainer {
+        padding: 0 10px;
+    }
 
     .utilityNav {
         display: none;

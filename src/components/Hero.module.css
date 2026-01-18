@@ -137,10 +137,9 @@
         /* Full height on mobile too */
         height: 100dvh;
         /* Dynamic viewport height for functional sizing */
-        align-items: flex-end;
-        /* Keep content at bottom */
-        padding-bottom: 10vh;
-        /* Lower content further down (closer to bottom, further from top logo) */
+        align-items: center;
+        /* Center content to avoid large gaps */
+        padding-bottom: 0;
     }
 
     .content {
@@ -152,13 +151,13 @@
     }
 
     .title {
-        font-size: 2.75rem;
+        font-size: clamp(2rem, 7vw, 2.4rem);
         /* Large but readable */
         word-wrap: break-word;
     }
 
     .subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .ctaGroup {
