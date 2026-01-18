@@ -25,9 +25,9 @@ export default function Home() {
           <div className={styles.whoWeAreContent}>
             <h2>Who We Are</h2>
             <p>
-              Orisco Energy Limited is an international company providing a broad spectrum of services and expertise in the oil and gas industry, both locally and internationally.
+              <strong>Orisco Energy Limited is an international company providing a broad spectrum of services and expertise in the oil and gas industry, both locally and internationally.</strong>
               <br /><br />
-              Our focus extends beyond oil and gas to support broader sectors, including power generation, infrastructure development, and other related areas that contribute to Nigeria’s industrial and economic growth.
+              <strong>Our focus extends beyond oil and gas to support broader sectors, including power generation, infrastructure development, and other related areas that contribute to Nigeria’s industrial and economic growth.</strong>
             </p>
           </div>
         </div>
