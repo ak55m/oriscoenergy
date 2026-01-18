@@ -1,22 +1,22 @@
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 40px 20px 80px;
+    padding: 0 20px 80px;
 }
 
 .heroHeader {
-    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-color: var(--white);
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: var(--primary-blue);
     text-align: center;
-    padding: 6rem 2rem;
-    min-height: 50vh;
+    padding: 0;
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     border-radius: 12px;
 }
 
@@ -24,8 +24,8 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
     margin-bottom: 1rem;
-    color: var(--white);
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--primary-blue);
+    text-shadow: none;
 }
 
 .heroHeader p {
@@ -37,7 +37,13 @@
     line-height: 1.6;
 }
 
+.heroHeader .heroSubtitle {
+    color: var(--text-dark);
+    margin-top: 0;
+}
+
 .section {
+    margin-top: 1.5rem;
     margin-bottom: 4rem;
 }
 
@@ -59,41 +65,43 @@
 }
 
 .galleryGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 28px;
+    column-count: 3;
+    column-gap: 24px;
 }
 
-.galleryCard {
-    background: var(--white);
-    border-radius: 14px;
-    overflow: hidden;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
-
-.cardImage {
-    min-height: 200px;
+.galleryImage {
+    min-height: 240px;
     background-size: cover;
     background-position: center;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    margin-bottom: 24px;
+    break-inside: avoid;
 }
 
-.cardBody {
-    padding: 20px 22px 24px;
+.galleryImage:nth-child(3n + 1) {
+    min-height: 320px;
 }
 
-.cardBody h3 {
-    color: var(--primary-blue);
-    font-size: 1.25rem;
-    margin-bottom: 8px;
+.galleryImage:nth-child(3n + 2) {
+    min-height: 220px;
 }
 
-.cardBody p {
-    color: var(--text-light);
-    line-height: 1.6;
+.galleryImage:nth-child(3n) {
+    min-height: 280px;
+}
+
+@media (max-width: 1024px) {
+    .galleryGrid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 640px) {
+    .galleryGrid {
+        column-count: 1;
+    }
 }
 
 @media (max-width: 768px) {

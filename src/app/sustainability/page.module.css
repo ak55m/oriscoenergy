@@ -52,6 +52,10 @@
     margin-bottom: 1rem;
 }
 
+.sectionHeader .occupationalHeader {
+    color: #8b1e1e;
+}
+
 .contentBlock {
     background: var(--white);
     padding: 2rem;

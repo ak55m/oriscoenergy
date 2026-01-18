@@ -39,7 +39,7 @@
 }
 
 .card:hover {
-  border-bottom-color: var(--secondary-blue);
+  border-bottom-color: #e0282e;
 }
 
 .cardImage {
@@ -91,12 +91,14 @@
   padding: 100px 0;
   background: var(--background-light);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .whoWeAreContent h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: var(--secondary-blue);
+  color: #e0282e;
 }
 
 .whoWeAreContent p {
@@ -106,6 +108,121 @@
   color: var(--text-dark);
   /* Ensure text is readable */
   line-height: 1.6;
+}
+
+
+.whoWeAreCircles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.whoWeAreCircles span {
+  position: absolute;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle at center, rgba(224, 40, 46, 0.3), rgba(224, 40, 46, 0));
+  animation: whoWeAreDrift 12s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.whoWeAreCircles span:nth-child(1) {
+  top: 15%;
+  left: 20%;
+  width: 140px;
+  height: 140px;
+  animation-duration: 12s;
+}
+
+.whoWeAreCircles span:nth-child(2) {
+  top: 55%;
+  left: 60%;
+  width: 220px;
+  height: 220px;
+  animation-duration: 14s;
+  animation-delay: -8s;
+}
+
+.whoWeAreCircles span:nth-child(3) {
+  top: 30%;
+  right: 10%;
+  width: 160px;
+  height: 160px;
+  animation-duration: 11s;
+  animation-delay: -4s;
+}
+
+.whoWeAreCircles span:nth-child(4) {
+  bottom: 15%;
+  left: 35%;
+  width: 200px;
+  height: 200px;
+  animation-duration: 15s;
+  animation-delay: -10s;
+}
+
+.whoWeAreCircles span:nth-child(5) {
+  top: 10%;
+  right: 35%;
+  width: 120px;
+  height: 120px;
+  animation-duration: 12s;
+  animation-delay: -12s;
+}
+
+.whoWeAreCircles span:nth-child(6) {
+  top: 70%;
+  right: 20%;
+  width: 150px;
+  height: 150px;
+  animation-duration: 16s;
+  animation-delay: -6s;
+}
+
+.whoWeAreCircles span:nth-child(7) {
+  top: 35%;
+  left: 5%;
+  width: 110px;
+  height: 110px;
+  animation-duration: 13s;
+  animation-delay: -9s;
+}
+
+.whoWeAreCircles span:nth-child(8) {
+  bottom: 5%;
+  right: 45%;
+  width: 90px;
+  height: 90px;
+  animation-duration: 10s;
+  animation-delay: -3s;
+}
+
+.whoWeAreContent {
+  position: relative;
+  z-index: 1;
+}
+
+
+@keyframes whoWeAreDrift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(60px, -40px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .whoWeAreSection::before,
+  .whoWeAreSection::after {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 /* What We Do Section */

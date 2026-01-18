@@ -52,6 +52,15 @@
     margin-bottom: 1rem;
 }
 
+.sectionHeader .qmsHeader {
+    color: #8b1e1e;
+}
+
+.qmsSection h3,
+.qmsSection .commitmentTitle {
+    color: #8b1e1e;
+}
+
 .contentBlock {
     background: var(--white);
     padding: 2rem;

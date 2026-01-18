@@ -39,31 +39,22 @@ export default function GalleryPage() {
             <header className={styles.heroHeader}>
                 <div style={{ position: 'relative', zIndex: 10 }}>
                     <h1>Gallery</h1>
-                    <p>
-                        A closer look at the people, projects, and places that define Orisco Energy.
+                    <p className={styles.heroSubtitle}>
+                        Snapshots from our operations, engineering, and field teams.
                     </p>
                 </div>
             </header>
 
             <section className={styles.section}>
-                <div className={styles.sectionHeader}>
-                    <h2>In Focus</h2>
-                    <p>Snapshots from our operations, engineering, and field teams.</p>
-                </div>
-
                 <div className={styles.galleryGrid}>
                     {galleryItems.map((item) => (
-                        <article key={item.title} className={styles.galleryCard}>
-                            <div
-                                className={styles.cardImage}
-                                style={{ backgroundImage: `url(${item.image})` }}
-                                aria-label={item.title}
-                            />
-                            <div className={styles.cardBody}>
-                                <h3>{item.title}</h3>
-                                <p>{item.description}</p>
-                            </div>
-                        </article>
+                        <div
+                            key={item.title}
+                            className={styles.galleryImage}
+                            style={{ backgroundImage: `url(${item.image})` }}
+                            aria-label={item.title}
+                            role="img"
+                        />
                     ))}
                 </div>
             </section>

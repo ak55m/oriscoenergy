@@ -31,6 +31,10 @@
     margin-bottom: 20px;
 }
 
+.sectionHeader .expertsHeader {
+    color: #8b1e1e;
+}
+
 .heroHeader h1 {
     font-size: 3.5rem;
     font-weight: 800;

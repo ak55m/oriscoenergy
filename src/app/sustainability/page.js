@@ -40,7 +40,7 @@ export default function SustainabilityPage() {
 
             <section className={styles.section}>
                 <div className={styles.sectionHeader}>
-                    <h2>OCCUPATIONAL HEALTH POLICY</h2>
+                    <h2 className={styles.occupationalHeader}>OCCUPATIONAL HEALTH POLICY</h2>
                 </div>
                 <div className={styles.contentBlock}>
                     <p>

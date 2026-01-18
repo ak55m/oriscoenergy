@@ -12,23 +12,23 @@ export default function TeamPage() {
 
     const ceo = {
         name: "James Oritse",
-        role: "MD/CEO, Orisco Energy Limited",
+        role: "Chief Executive Officer, Orisco Energy Limited",
         bio: "Seasoned energy executive with over 30 years of experience in crude oil and gas production, maintenance, project management, and corporate leadership.",
         details: `James Oritse is a seasoned energy executive and the Chief Executive Officer of Orisco Energy Limited, an indigenous engineering and supply chain company servicing the oil and gas industry and other key sectors in Nigeria and beyond. With a career spanning over 30 years, he brings a wealth of experience in crude oil and gas production, maintenance, project management, and corporate leadership. James is a distinguished alumnus of the prestigious Petroleum Training Institute, holding a Higher National Diploma, and has earned numerous certifications and industry awards over the years.
 
 **Unparalleled Experience in the Oil & Gas Industry**
-James Oritse’s extensive career includes **28 years at Chevron Nigeria Limited**, where he rose to management level, overseeing critical oil and gas operations. As a **U.S.-trained pioneer and startup team member** of Nigeria’s first LPG gas plant—the **Escravos Gas Plant**—he played a pivotal role in the facility’s construction, commissioning, and operations. His expertise covers all aspects of crude oil and gas production, including maintenance, gas processing, and facility management.
+James Oritse’s extensive career includes 28 years at Chevron Nigeria Limited, where he rose to management level, overseeing critical oil and gas operations. As a U.S.-trained pioneer and startup team member of Nigeria’s first LPG gas plant—the Escravos Gas Plant—he played a pivotal role in the facility’s construction, commissioning, and operations. His expertise covers all aspects of crude oil and gas production, including maintenance, gas processing, and facility management.
 
-As a **Field Supervisor at Chevron Nigeria Limited**, James managed **six major facilities across the Niger Delta**, overseeing over 100 personnel, including production and maintenance staff, security teams, government security forces (GSF), marine personnel, and community representatives. His leadership ensured the seamless operation of high-stakes oil and gas production facilities.
+As a Field Supervisor at Chevron Nigeria Limited, James managed six major facilities across the Niger Delta, overseeing over 100 personnel, including production and maintenance staff, security teams, government security forces (GSF), marine personnel, and community representatives. His leadership ensured the seamless operation of high-stakes oil and gas production facilities.
 
-One of his most notable achievements was **leading a specialized local and foreign team to extinguish the wellhead fire at Ojumole**, a project that earned him a commendation from Chevron's CEO/MD for his exceptional crisis management and operational expertise.
+One of his most notable achievements was leading a specialized local and foreign team to extinguish the wellhead fire at Ojumole, a project that earned him a commendation from Chevron's CEO/MD for his exceptional crisis management and operational expertise.
 
-Throughout his career, James has collaborated with **key industry stakeholders**, including:
-• **Regulatory Bodies** – DPR, NGC, NAPIMS
-• **Corporate Functions** – Supply Chain Management (SCM), Public Affairs, HES, Field, Production and facilities Engineering.
-• **Major Contractors** – Both local and international firms
+Throughout his career, James has collaborated with key industry stakeholders, including:
+• Regulatory Bodies – DPR, NGC, NAPIMS
+• Corporate Functions – Supply Chain Management (SCM), Public Affairs, HES, Field, Production and facilities Engineering.
+• Major Contractors – Both local and international firms
 
-His expertise has taken him beyond Nigeria to countries such as the **UK, the US, Dubai, and South Korea**, where he has worked, undergone extensive training and professional development. These experiences broadened his perspective, honed his cross-cultural leadership abilities, and exposed him to global best practices in energy project execution, safety standards, and stakeholder engagement.`
+His expertise has taken him beyond Nigeria to countries such as the UK, the US, Dubai, and South Korea, where he has worked, undergone extensive training and professional development. These experiences broadened his perspective, honed his cross-cultural leadership abilities, and exposed him to global best practices in energy project execution, safety standards, and stakeholder engagement.`
     };
 
     const teamMembers = [
@@ -135,7 +135,7 @@ In 2021, he joined Orisco Energy Limited as a Project Manager, where he successf
 
             <section>
                 <div className={styles.sectionHeader}>
-                    <h2>Our Experts</h2>
+                    <h2 className={styles.expertsHeader}>Our Experts</h2>
                 </div>
                 <div className={styles.teamGrid}>
                     {teamMembers.map((member, index) => (

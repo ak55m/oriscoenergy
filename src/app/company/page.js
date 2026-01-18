@@ -59,9 +59,9 @@ export default function CompanyPage() {
 
             <section className={styles.section}>
                 <div className={styles.sectionHeader}>
-                    <h2>QUALITY MANAGEMENT SYSTEMS (QMS) POLICY STATEMENT</h2>
+                    <h2 className={styles.qmsHeader}>QUALITY MANAGEMENT SYSTEMS (QMS) POLICY STATEMENT</h2>
                 </div>
-                <div className={`${styles.contentBlock} ${styles.qmsBlock}`}>
+                <div className={`${styles.contentBlock} ${styles.qmsBlock} ${styles.qmsSection}`}>
                     <p>
                         At Orisco Energy Limited, we are dedicated to maintaining the highest standards of quality in all our operations.
                         Our commitment to excellence is underpinned by a robust Quality Management System (QMS) that aligns with Local and international best practices, regulatory requirements, and the specific needs of our clients and stakeholders.
