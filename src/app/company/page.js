@@ -12,7 +12,7 @@ export default function CompanyPage() {
                 <div style={{ position: 'relative', zIndex: 10 }}>
                     <h1>About Orisco Energy</h1>
                     <p>
-                        A leading indigenous energy company committed to delivering sustainable solutions and driving industrial growth.
+                        A leading energy company committed to delivering sustainable solutions and driving industrial growth.
                     </p>
                 </div>
             </header>
@@ -23,7 +23,7 @@ export default function CompanyPage() {
                 </div>
                 <div className={styles.contentBlock}>
                     <p>
-                        Orisco Energy Limited is an indigenous company providing a broad spectrum of services and expertise in the oil and gas Industry both locally and internationally. As an indigenous company, our focus often extends beyond oil and gas to support broader sectors, potentially including power generation, infrastructure development, and other related areas that contribute to Nigeria's industrial and economic growth.
+                        Orisco Energy Limited is a company providing a broad spectrum of services and expertise in the oil and gas Industry both locally and internationally. Our focus often extends beyond oil and gas to support broader sectors, potentially including power generation, infrastructure development, and other related areas that contribute to Nigeria's industrial and economic growth.
                     </p>
                     <br />
                     <p>
