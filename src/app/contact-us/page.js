@@ -29,49 +29,35 @@ export default function ContactUsPage() {
                                 <span>2, Water Resources Road, Eﬀurun, Delta State, Nigeria</span>
                             </li>
                             <li>
+                                <span className={styles.detailLabel}>Nigeria Tel</span>
+                                <span>+234 805 588 0024, +234 802 588 0732, +234 803 397 1510</span>
+                            </li>
+                            <li>
                                 <span className={styles.detailLabel}>Canada Address</span>
                                 <span>11, Fruitful Crescent Whitby. L1P0N3 Ontario, Canada</span>
                             </li>
                             <li>
                                 <span className={styles.detailLabel}>Canada Tel</span>
-                                <span>+16478071966</span>
+                                <span>+1 647 807 1966</span>
                             </li>
                             <li>
-                                <span className={styles.detailLabel}>Managing Director, P.M</span>
-                                <span>Mohammed Usman Anyanokhabor — +1(469)-428-3546</span>
+                                <span className={styles.detailLabel}>USA Address</span>
+                                <span>18930 Hartford Falls Ln, Richmond TX 77407</span>
                             </li>
                             <li>
-                                <span className={styles.detailLabel}>Project Manager</span>
-                                <span>Charles Isiwele — +234(803)-397-1510</span>
+                                <span className={styles.detailLabel}>USA Tel</span>
+                                <span>+1 469 428 3546</span>
                             </li>
                             <li>
                                 <span className={styles.detailLabel}>Email</span>
                                 <a href="mailto:oriscoenergy@gmail.com">oriscoenergy@gmail.com</a>
                             </li>
+                            <li>
+                                <span className={styles.detailLabel}>Website</span>
+                                <a href="https://www.oriscoenergy.com">www.oriscoenergy.com</a>
+                            </li>
                         </ul>
                     </div>
-
-                    <form className={styles.formCard} action="#" method="post">
-                        <div className={styles.formRow}>
-                            <label htmlFor="full-name">Full Name</label>
-                            <input id="full-name" name="fullName" type="text" placeholder="Your name" />
-                        </div>
-                        <div className={styles.formRow}>
-                            <label htmlFor="email">Email Address</label>
-                            <input id="email" name="email" type="email" placeholder="you@email.com" />
-                        </div>
-                        <div className={styles.formRow}>
-                            <label htmlFor="company">Company</label>
-                            <input id="company" name="company" type="text" placeholder="Company name" />
-                        </div>
-                        <div className={styles.formRow}>
-                            <label htmlFor="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="How can we help?" />
-                        </div>
-                        <button type="submit" className={styles.submitBtn}>
-                            Send Message
-                        </button>
-                    </form>
                 </div>
             </section>
         </div>

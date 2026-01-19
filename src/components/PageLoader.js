@@ -19,7 +19,7 @@ export default function PageLoader() {
                 className={styles.splashLogo}
             >
                 <Image
-                    src="/logo_loader_v4.png"
+                    src="/logo_loader_v2.png"
                     alt="Orisco Energy"
                     width={220}
                     height={80}

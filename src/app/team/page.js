@@ -31,7 +31,7 @@ export default function TeamPage() {
                     <h2>James Oritse</h2>
                     <span className={styles.role}>Chief Executive Officer (C.E.O)</span>
                     <p className={styles.bio}>
-                        Our CEO and Managing Director brings over 30 years of multinational oil and gas industry experience. A pioneer of the Escravos Gas Plant and a distinguished alumnus of the Petroleum Training Institute, he leads Orisco Energy with a focus on technical excellence and operational discipline.
+                        Our CEO brings over 30 years of multinational oil and gas industry experience. He leads Orisco Energy with a focus on technical excellence and operational discipline.
                     </p>
                     <p className={styles.bio}>
                         His leadership extends beyond operations to organizational development and public service, ensuring Orisco Energy delivers total client satisfaction while maintaining the highest safety standards.

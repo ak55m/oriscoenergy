@@ -60,12 +60,11 @@
 
 .contactGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 28px;
 }
 
-.detailsCard,
-.formCard {
+.detailsCard {
     background: var(--white);
     border-radius: 14px;
     padding: 28px;
@@ -95,55 +94,6 @@
     margin-bottom: 4px;
 }
 
-.formCard {
-    display: grid;
-    gap: 18px;
-}
-
-.formRow {
-    display: grid;
-    gap: 8px;
-}
-
-.formRow label {
-    font-weight: 600;
-    color: var(--primary-blue);
-}
-
-.formRow input,
-.formRow textarea {
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: 1px solid #d7dee6;
-    font-size: 0.95rem;
-    font-family: inherit;
-    background-color: #f9fbfd;
-}
-
-.formRow input:focus,
-.formRow textarea:focus {
-    outline: 2px solid rgba(42, 125, 225, 0.2);
-    border-color: rgba(42, 125, 225, 0.6);
-    background-color: #ffffff;
-}
-
-.submitBtn {
-    border: none;
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 14px 20px;
-    border-radius: 999px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    justify-self: start;
-}
-
-.submitBtn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 18px rgba(0, 40, 85, 0.2);
-}
-
 @media (max-width: 768px) {
     .heroHeader {
         padding: 4rem 1.5rem;
@@ -154,8 +104,4 @@
         font-size: 2rem;
     }
 
-    .submitBtn {
-        width: 100%;
-        justify-self: stretch;
-    }
 }

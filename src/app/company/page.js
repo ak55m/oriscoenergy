@@ -10,9 +10,9 @@ export default function CompanyPage() {
         <div className={styles.container}>
             <header className={styles.heroHeader}>
                 <div style={{ position: 'relative', zIndex: 10 }}>
-                    <h1>About Orisco Energy</h1>
+                    <h1 className={styles.heroTitle}>About Orisco Energy</h1>
                     <p>
-                        A leading energy company committed to delivering sustainable solutions and driving industrial growth.
+                        A leading engineering company committed to delivering sustainable solutions and driving industrial growth.
                     </p>
                 </div>
             </header>
@@ -23,11 +23,11 @@ export default function CompanyPage() {
                 </div>
                 <div className={styles.contentBlock}>
                     <p>
-                        Orisco Energy Limited is a company providing a broad spectrum of services and expertise in the oil and gas Industry both locally and internationally. Our focus often extends beyond oil and gas to support broader sectors, potentially including power generation, infrastructure development, and other related areas that contribute to Nigeria's industrial and economic growth.
+                        Orisco Energy Limited is a company providing a broad spectrum of services and expertise in the oil and gas Industry both locally and internationally. Our focus often extends beyond oil and gas to support broader sectors, potentially including power generation, infrastructure development, and other related areas that contribute to Nigeria&apos;s industrial and economic growth.
                     </p>
                     <br />
                     <p>
-                        Orisco Energy possess an optimum focus on total satisfaction of our clients and utilizing very eﬃcient network of procurement (Local and Foreign) for services in accomplishing our client's desire.
+                        Orisco Energy possess an optimum focus on total satisfaction of our clients and utilizing very eﬃcient network of procurement (Local and Foreign) for services in accomplishing our client&apos;s desire.
                     </p>
                     <br />
                     <p>
@@ -128,7 +128,7 @@ export default function CompanyPage() {
 
             <section className={styles.section}>
                 <div className={styles.sectionHeader}>
-                    <h2>DIVERSITY STATEMENT</h2>
+                    <h2 className={styles.diversityHeader}>DIVERSITY STATEMENT</h2>
                 </div>
                 <div className={`${styles.contentBlock} ${styles.diversityBlock}`}>
                     <p>

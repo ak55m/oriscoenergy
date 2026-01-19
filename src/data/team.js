@@ -22,7 +22,7 @@ His expertise has taken him beyond Nigeria to countries such as the UK, the US, 
 export const teamMembers = [
     {
         name: "Mohammed Usman Anyanokhabor",
-        role: "Managing Director, P.M",
+        role: "Managing Director, M.D",
         bio: "Managing Director with over three decades of outstanding contributions to the energy industry, spanning project leadership and production optimization.",
         details: `Mohammed Usman Anyanokhabor is the Managing Director of Orisco Energy Limited, with over three decades of outstanding contributions to the energy industry. His extensive experience spans project leadership, engineering management, production optimization, and corporate governance, making him a respected figure in both local and international energy circles.
 
@@ -53,7 +53,7 @@ Mohammed is also known for his exceptional people skills, integrity, and dedicat
     },
     {
         name: "Charles Isiwele",
-        role: "Project Manager",
+        role: "Project Manager, P.M",
         bio: "Seasoned Civil and Construction professional with over three decades of experience delivering complex projects across oil and gas and infrastructure sectors.",
         details: `Charles Isiwele is a seasoned Civil and Construction professional with over three decades of experience delivering complex projects across the oil and gas companies, industrial, commercial, residential, and public infrastructure sectors in Nigeria. He holds a Higher National Diploma (HND) in Civil Engineering from Auchi Polytechnic, obtained in 1994.
 

@@ -52,6 +52,19 @@
     margin-bottom: 1.5rem;
 }
 
+.scopeHeading {
+    position: relative;
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(11, 58, 177, 0.12);
+    color: #cf1111;
+}
+
+.scopeHeading::after {
+    content: none;
+}
+
 .introSection p {
     font-size: 1.1rem;
     color: var(--text-dark);

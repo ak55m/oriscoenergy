@@ -1,56 +1,36 @@
 'use client';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
-import { Search, Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import styles from './Header.module.css';
-import { services } from '@/data/services';
-import { searchIndex } from '@/data/searchIndex';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
-  const [query, setQuery] = useState('');
   const pathname = usePathname();
 
   const isLightTheme = pathname === '/team' || pathname === '/operations' || pathname === '/company' || pathname === '/sustainability' || pathname === '/careers' || pathname === '/gallery' || pathname === '/contact-us';
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
-  const openSearch = () => setIsSearchOpen(true);
-  const closeSearch = () => {
-    setIsSearchOpen(false);
-    setQuery('');
-  };
-
-  const searchItems = useMemo(() => ([
-    ...searchIndex,
-    ...services.map((service) => ({
-      label: service,
-      href: '/operations',
-      type: 'Service'
-    }))
-  ]), []);
-
-  const filteredItems = useMemo(() => {
-    const trimmed = query.trim().toLowerCase();
-    if (!trimmed) {
-      return searchItems.slice(0, 12);
-    }
-    return searchItems.filter((item) => item.label.toLowerCase().includes(trimmed)).slice(0, 20);
-  }, [query, searchItems]);
 
   return (
     <header className={`${styles.header} ${isLightTheme ? styles.lightTheme : ''}`}>
       <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo} onClick={closeMenu} aria-label="Orisco Energy home">
+        <Link
+          href="/"
+          className={`${styles.logo} ${pathname === '/' ? styles.logoHome : ''}`}
+          onClick={closeMenu}
+          aria-label="Orisco Energy home"
+        >
           <Image
-            src="/logo_nav.png"
+            src={pathname === '/' ? '/logo_nav_home.png' : '/logo_nav_v2.png'}
             alt="Orisco Energy"
-            width={64}
-            height={64}
-            className={styles.logoImage}
+            width={pathname === '/' ? 560 : 64}
+            height={pathname === '/' ? 145 : 64}
+            sizes={pathname === '/' ? '(max-width: 768px) 360px, 560px' : '64px'}
+            className={`${styles.logoImage} ${pathname === '/' ? styles.logoImageHome : ''}`}
             priority
           />
         </Link>
@@ -84,11 +64,7 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div className={styles.utilityNav}>
-          <button className={styles.searchBtn} onClick={openSearch} aria-label="Open site search">
-            <Search size={20} />
-          </button>
-        </div>
+        <div className={styles.utilityNav}></div>
 
         <button
           className={styles.menuBtn}
@@ -100,46 +76,6 @@ export default function Header() {
         </button>
       </div>
 
-      {isSearchOpen && (
-        <div className={styles.searchOverlay} role="dialog" aria-modal="true" aria-label="Site search">
-          <button className={styles.searchBackdrop} onClick={closeSearch} aria-label="Close search" />
-          <div className={styles.searchModal}>
-            <div className={styles.searchHeader}>
-              <h3>Search</h3>
-              <button className={styles.searchClose} onClick={closeSearch} aria-label="Close search">
-                <X size={18} />
-              </button>
-            </div>
-            <div className={styles.searchInputRow}>
-              <Search size={18} />
-              <input
-                type="search"
-                placeholder="Search pages or services"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                autoFocus
-              />
-            </div>
-            <div className={styles.searchResults}>
-              {filteredItems.length === 0 ? (
-                <p className={styles.searchEmpty}>No results found.</p>
-              ) : (
-                filteredItems.map((item) => (
-                  <Link
-                    key={`${item.type}-${item.label}`}
-                    href={item.href}
-                    className={styles.searchResult}
-                    onClick={closeSearch}
-                  >
-                    <span>{item.label}</span>
-                    <em>{item.type}</em>
-                  </Link>
-                ))
-              )}
-            </div>
-          </div>
-        </div>
-      )}
     </header>
   );
 }

@@ -46,7 +46,6 @@ export default function SkillsModal({ isOpen, onClose, member }) {
 
                     {/* Main Body: Details */}
                     <div className={styles.mainBody}>
-                        <h4 className={styles.sectionTitle}>Experience</h4>
                         <div className={styles.bioText}>
                             {formatText(member.details || member.bio)}
                         </div>

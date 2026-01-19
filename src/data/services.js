@@ -1,6 +1,6 @@
 export const services = [
     "Construction (Industrial, Infrastructure and Building)",
-    "Developments of Operating procedures (Project Execution Plan (PEP), Commissioning, Start-up, Shutdown etc.)",
+    "Refinery and Process Plant Maintenance and Operations",
     "Engineering (Mechanical, Electrical and SCADA)",
     "Heavy duty machinery procurement, Installation and operations",
     "Instrumentation and Control",

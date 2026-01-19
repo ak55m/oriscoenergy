@@ -21,9 +21,18 @@ export default function OperationsPage() {
 
             <section className={styles.introSection}>
                 <p>
+                    Orisco Energy integrated approach means contributing to the development of Nigeria Oil &amp; gas sector. We believe that oil &amp; gas producing nation should be
+                    self-suﬃcient in term of energy supply.
+                </p>
+                <p>
                     We build a relationship of trust with our partners and create sustainable long-term values. Our services are oﬀered at aﬀordable and fair competitive prices and are commensurate with high quality products and services. Orisco Energy is made up of high skilled and dedicated professionals that provide our client with expertise and eﬃcient services.
                 </p>
-                <h2>Scope of Services</h2>
+                <p>
+                    Orisco Energy engages in the operation and maintenance of Refineries, Oil and Gas
+                    Production Facilities (Land, Onshore and Oﬀshore) and other sectors outside the Oil
+                    Industry.
+                </p>
+                <h2 className={styles.scopeHeading}>Our Scope of Services</h2>
                 <p>
                     Our broad capability enables us to offer a wide range of specialized services.
                 </p>

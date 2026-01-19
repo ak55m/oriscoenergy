@@ -62,8 +62,8 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.2 }}
                 >
                     <h1 className={styles.title}>
-                        Oil and gas operations,<br />
-                        built on engineering excellence.
+                        Solutions for energy systems<br />
+                        and essential infrastructure.
                     </h1>
                     <p className={styles.subtitle}>
                         Orisco Energy is committed to delivering affordable, reliable, and ever-cleaner energy to enable human progress.

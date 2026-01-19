@@ -1,36 +1,43 @@
 import styles from './page.module.css';
 
 const galleryItems = [
-    {
-        title: 'Field Operations',
-        description: 'On-site execution and oversight across core assets.',
-        image: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
-    {
-        title: 'Project Engineering',
-        description: 'Design and delivery for complex infrastructure builds.',
-        image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
-    {
-        title: 'Maintenance Teams',
-        description: 'Reliability-focused work that keeps systems online.',
-        image: 'https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
-    {
-        title: 'Fabrication',
-        description: 'Precision builds for critical equipment and tooling.',
-        image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
-    {
-        title: 'Safety Culture',
-        description: 'Training and procedures that protect people and assets.',
-        image: 'https://images.unsplash.com/photo-1507668077129-56e32842fceb?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    },
-    {
-        title: 'Logistics',
-        description: 'Coordinated supply movement across operations.',
-        image: 'https://images.unsplash.com/photo-1519999482648-25049ddd37b1?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    }
+    '/gallery/gallery-01.jpg',
+    '/gallery/gallery-02.jpg',
+    '/gallery/gallery-03.jpg',
+    '/gallery/gallery-04.jpg',
+    '/gallery/gallery-05.jpg',
+    '/gallery/gallery-06.jpg',
+    '/gallery/gallery-07.jpg',
+    '/gallery/gallery-08.jpg',
+    '/gallery/gallery-09.jpg',
+    '/gallery/gallery-10.jpg',
+    '/gallery/gallery-11.jpg',
+    '/gallery/gallery-12.jpg',
+    '/gallery/gallery-13.jpg',
+    '/gallery/gallery-14.jpg',
+    '/gallery/gallery-15.jpg',
+    '/gallery/gallery-16.jpg',
+    '/gallery/gallery-17.jpg',
+    '/gallery/gallery-18.jpg',
+    '/gallery/gallery-19.jpg',
+    '/gallery/gallery-20.jpg',
+    '/gallery/gallery-21.jpg',
+    '/gallery/gallery-22.jpg',
+    '/gallery/gallery-23.jpg',
+    '/gallery/gallery-24.jpg',
+    '/gallery/gallery-25.jpg',
+    '/gallery/gallery-26.jpg',
+    '/gallery/gallery-27.jpg',
+    '/gallery/gallery-28.jpg',
+    '/gallery/gallery-29.jpg',
+    '/gallery/gallery-30.jpg',
+    '/gallery/gallery-31.jpg',
+    '/gallery/gallery-32.jpg',
+    '/gallery/gallery-33.jpg',
+    '/gallery/gallery-34.jpg',
+    '/gallery/gallery-35.jpg',
+    '/gallery/gallery-36.jpg',
+    '/gallery/gallery-37.jpg'
 ];
 
 export default function GalleryPage() {
@@ -49,10 +56,9 @@ export default function GalleryPage() {
                 <div className={styles.galleryGrid}>
                     {galleryItems.map((item) => (
                         <div
-                            key={item.title}
+                            key={item}
                             className={styles.galleryImage}
-                            style={{ backgroundImage: `url(${item.image})` }}
-                            aria-label={item.title}
+                            style={{ backgroundImage: `url(${item})` }}
                             role="img"
                         />
                     ))}
