@@ -56,7 +56,7 @@ export default function Home() {
                       : index === 1
                         ? "url('https://images.unsplash.com/photo-1721554009743-317e0fec8dbc?q=80&w=2342&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
                       : index === 2
-                        ? "url('/images/engineering-image.png')"
+                        ? "url('/images/engineering-image.jpg')"
                         : "url('/images/heavy-duty-image.png')",
                     backgroundSize: index === 0 || index === 1 || index === 2 || index === 3 ? 'cover' : 'auto',
                     backgroundPosition: index === 0 || index === 1 || index === 2 || index === 3 ? 'center' : 'initial',
@@ -65,7 +65,17 @@ export default function Home() {
                 ></div>
                 <div className={styles.cardContent}>
                   <h3>{service}</h3>
-                  <p>Comprehensive {service.toLowerCase()} solutions for the energy sector.</p>
+                  <p>
+                    {service === "Construction (Industrial, Infrastructure and Building)"
+                      ? "Construction services for industrial, infrastructure, and building projects, delivered with strong HSE standards, quality control, and on-time execution."
+                      : service === "Engineering (Mechanical, Electrical and SCADA)"
+                        ? "Engineering solutions across mechanical, electrical, and SCADA systems, from design and integration to commissioning and performance optimization."
+                        : service === "Heavy duty machinery procurement, Installation and operations"
+                          ? "Heavy duty machinery procurement, installation, and operations services, covering sourcing, logistics, commissioning, and on-site support for critical equipment."
+                        : service === "Refinery and Process Plant Maintenance and Operations"
+                          ? "Refinery and process plant maintenance and operations focused on uptime, safety, and efficient production performance."
+                          : `Comprehensive ${service.toLowerCase()} solutions for the energy sector.`}
+                  </p>
                 </div>
               </article>
             ))}

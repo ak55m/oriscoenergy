@@ -65,17 +65,18 @@
 }
 
 .galleryGrid {
-    column-count: 3;
+    column-width: 280px;
     column-gap: 24px;
 }
 
 .galleryImage {
     min-height: 240px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 14px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+    border: none;
+    box-shadow: none;
     margin-bottom: 24px;
     break-inside: avoid;
 }
@@ -92,15 +93,9 @@
     min-height: 280px;
 }
 
-@media (max-width: 1024px) {
-    .galleryGrid {
-        column-count: 2;
-    }
-}
-
 @media (max-width: 640px) {
     .galleryGrid {
-        column-count: 1;
+        column-width: 220px;
     }
 }
 

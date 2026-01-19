@@ -29,7 +29,7 @@ export default function TeamPage() {
                 </div>
                 <div className={styles.ceoContent}>
                     <h2>James Oritse</h2>
-                    <span className={styles.role}>Chief Executive Officer (C.E.O)</span>
+                    <span className={styles.role}>Chief Executive Officer (CEO)</span>
                     <p className={styles.bio}>
                         Our CEO brings over 30 years of multinational oil and gas industry experience. He leads Orisco Energy with a focus on technical excellence and operational discipline.
                     </p>
