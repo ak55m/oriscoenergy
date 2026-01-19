@@ -65,9 +65,8 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.2 }}
                 >
                     <h1 className={styles.title}>
-                        Indigenous expertise.<br />
-                        Global standards.<br />
-                        Proven delivery.
+                        Solutions for energy systems<br />
+                        and essential infrastructure.
                     </h1>
                     <p className={styles.subtitle}>
                         Orisco Energy Limited provides end-to-end engineering and supply chain services, supporting operations and infrastructure projects with a commitment to safety, quality, and operational excellence.
