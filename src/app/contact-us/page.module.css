@@ -5,10 +5,10 @@
 }
 
 .heroHeader {
-    background-image: linear-gradient(rgba(0, 30, 60, 0.7), rgba(0, 30, 60, 0.7)), url('/images/contact-hero.png');
+    background-image: url('/images/contact-hero.png');
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: #cf1111;
     text-align: center;
     padding: 6rem 2rem;
     min-height: 50vh;
@@ -24,13 +24,13 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 800;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: #cf1111;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .heroHeader p {
     font-size: 1.1rem;
-    color: var(--white);
+    color: #cf1111;
     max-width: 760px;
     margin: 0 auto;
     opacity: 0.9;
