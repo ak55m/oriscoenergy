@@ -16,6 +16,10 @@
     overflow: hidden;
 }
 
+.homeHero {
+    padding-top: 130px;
+}
+
 .carouselContainer {
     position: absolute;
     top: 0;
@@ -70,8 +74,8 @@
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 32px;
     font-weight: 400;
     max-width: 900px;
     /* Expanded from 700px */
@@ -140,6 +144,10 @@
         align-items: center;
         /* Center content to avoid large gaps */
         padding-bottom: 0;
+    }
+
+    .homeHero {
+        padding-top: 100px;
     }
 
     .content {

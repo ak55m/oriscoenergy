@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 
 const galleryItems = [
-    '/gallery/gallery-001.jpg',
+    '/gallery/gallery-001.png',
     '/gallery/gallery-002.jpg',
     '/gallery/gallery-003.jpg',
     '/gallery/gallery-004.jpg',
@@ -43,7 +43,9 @@ const galleryItems = [
     '/gallery/gallery-040.jpg',
     '/gallery/gallery-041.jpg',
     '/gallery/gallery-042.jpg',
-    '/gallery/gallery-043.jpg'
+    '/gallery/gallery-043.jpg',
+    '/gallery/gallery-044.jpg',
+    '/gallery/gallery-045.jpg'
 ];
 
 export default function GalleryPage() {

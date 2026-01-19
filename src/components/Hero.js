@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import styles from './Hero.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -15,6 +16,8 @@ const heroImages = [
 
 export default function Hero() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const pathname = usePathname();
+    const isHome = pathname === '/';
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -28,7 +31,7 @@ export default function Hero() {
     }, [currentImageIndex]);
 
     return (
-        <section className={styles.hero}>
+        <section className={`${styles.hero} ${isHome ? styles.homeHero : ''}`}>
             {/* Background Carousel */}
             <div className={styles.carouselContainer}>
                 <AnimatePresence mode="popLayout">
@@ -62,19 +65,20 @@ export default function Hero() {
                     transition={{ duration: 1, delay: 0.2 }}
                 >
                     <h1 className={styles.title}>
-                        Solutions for energy systems<br />
-                        and essential infrastructure.
+                        Indigenous expertise.<br />
+                        Global standards.<br />
+                        Proven delivery.
                     </h1>
                     <p className={styles.subtitle}>
-                        Orisco Energy is committed to delivering affordable, reliable, and ever-cleaner energy to enable human progress.
+                        Orisco Energy Limited provides end-to-end engineering and supply chain services, supporting operations and infrastructure projects with a commitment to safety, quality, and operational excellence.
                     </p>
 
                     <div className={styles.ctaGroup}>
-                        <Link href="/company" className={styles.primaryBtn}>
-                            Our Company
+                        <Link href="/gallery" className={styles.primaryBtn}>
+                            Our Gallery
                         </Link>
-                        <Link href="/operations" className={styles.secondaryBtn}>
-                            View Operations
+                        <Link href="/contact-us" className={styles.secondaryBtn}>
+                            Contact Us
                         </Link>
                     </div>
                 </motion.div>

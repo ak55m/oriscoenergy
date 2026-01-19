@@ -16,7 +16,7 @@ export default function Header() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className={`${styles.header} ${isLightTheme ? styles.lightTheme : ''}`}>
+    <header className={`${styles.header} ${isLightTheme ? styles.lightTheme : ''} ${pathname === '/' ? styles.headerHome : ''}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link
           href="/"
