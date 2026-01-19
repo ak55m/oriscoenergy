@@ -71,12 +71,12 @@
 
 .galleryImage {
     min-height: 240px;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 14px;
-    border: none;
-    box-shadow: none;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
     margin-bottom: 24px;
     break-inside: avoid;
 }
@@ -91,6 +91,12 @@
 
 .galleryImage:nth-child(3n) {
     min-height: 280px;
+}
+
+.galleryImage:nth-child(5) {
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (max-width: 640px) {

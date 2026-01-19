@@ -21,7 +21,6 @@ const galleryItems = [
     '/gallery/gallery-018.jpg',
     '/gallery/gallery-019.jpg',
     '/gallery/gallery-020.jpg',
-    '/gallery/gallery-021.jpg',
     '/gallery/gallery-022.jpg',
     '/gallery/gallery-023.jpg',
     '/gallery/gallery-024.jpg',
