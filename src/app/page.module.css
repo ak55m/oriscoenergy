@@ -110,6 +110,10 @@
   line-height: 1.6;
 }
 
+.aboutText {
+  font-weight: 600;
+}
+
 
 .whoWeAreCircles {
   position: absolute;

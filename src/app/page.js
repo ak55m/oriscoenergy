@@ -23,11 +23,13 @@ export default function Home() {
         </div>
         <div className="container">
           <div className={styles.whoWeAreContent}>
-            <h2>Who We Are</h2>
-            <p>
-              <strong>Orisco Energy Limited is an international company providing a broad spectrum of services and expertise in the oil and gas industry, both locally and internationally.</strong>
+            <h2>About Us</h2>
+            <p className={styles.aboutText}>
+              Orisco Energy Limited is an engineering, procurement, and supply chain company delivering high-quality solutions to the oil and gas industry and allied sectors in Nigeria and internationally. Founded in 2011, Orisco combines deep technical expertise, strong local content capability, and global sourcing strength to execute projects safely, efficiently, and to international standards.
               <br /><br />
-              <strong>Our focus extends beyond oil and gas to support broader sectors, including power generation, infrastructure development, and other related areas that contribute to Nigeria’s industrial and economic growth.</strong>
+              We provide end-to-end solutions spanning engineering, procurement, construction support, operations, maintenance, and specialized manpower services.
+              Our experience cuts across onshore and offshore environments, with successful project execution for clients such as NNPC, NDDC, Daewoo, and other major industry players. We source and deliver critical materials and equipment both locally and internationally, operating confidently in local and foreign currencies.
+              Driven by operational excellence, safety, and integrity, Orisco Energy Limited partners with clients to deliver reliable, cost-effective solutions that support asset integrity, production efficiency, and long-term value creation.
             </p>
           </div>
         </div>
