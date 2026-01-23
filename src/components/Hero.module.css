@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100svh;
     /* Full viewport height for immersive feel */
     width: 100%;
     /* Background handled by Image Carousel in JS */
@@ -8,16 +8,16 @@
     /* Fallback */
     color: var(--white);
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 120px;
-    /* More padding at bottom */
-    padding-top: var(--header-height);
+    align-items: stretch;
+    flex-direction: column;
+    padding-top: calc(var(--header-height) + 96px);
+    padding-bottom: clamp(32px, 6vh, 80px);
     /* Ensure content doesn't hit header if top aligned */
     overflow: hidden;
 }
 
 .homeHero {
-    padding-top: 130px;
+    padding-top: 220px;
 }
 
 .carouselContainer {
@@ -61,6 +61,7 @@
     /* Expanded from 900px */
     margin-left: 5%;
     /* Slight left offset */
+    margin-top: auto;
     animation: fadeIn 1s ease-out;
 }
 
@@ -133,7 +134,7 @@
     }
 
     .homeHero {
-        padding-top: 110px;
+        padding-top: 190px;
     }
 
     .content {
@@ -166,7 +167,7 @@
     }
 
     .homeHero {
-        padding-top: 100px;
+        padding-top: 180px;
     }
 
     .title {
@@ -188,17 +189,14 @@
 
 @media (max-width: 768px) {
     .hero {
-        height: 100vh;
-        /* Full height on mobile too */
-        height: 100dvh;
-        /* Dynamic viewport height for functional sizing */
-        align-items: center;
-        /* Center content to avoid large gaps */
-        padding-bottom: 0;
+        min-height: 100svh;
+        align-items: stretch;
+        padding-top: calc(var(--header-height) + 24px);
+        padding-bottom: clamp(24px, 6vh, 60px);
     }
 
     .homeHero {
-        padding-top: 100px;
+        padding-top: 180px;
     }
 
     .content {
