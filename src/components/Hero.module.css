@@ -123,6 +123,57 @@
     border-color: #1a65c0;
 }
 
+@media (max-width: 1200px) {
+    .backgroundImage {
+        background-position: center 30%;
+    }
+
+    .hero {
+        padding-bottom: 90px;
+    }
+
+    .homeHero {
+        padding-top: 110px;
+    }
+
+    .content {
+        max-width: 900px;
+    }
+
+    .title {
+        font-size: 3.2rem;
+    }
+
+    .subtitle {
+        font-size: 1.05rem;
+        max-width: 760px;
+    }
+
+    .primaryBtn,
+    .secondaryBtn {
+        padding: 14px 32px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .backgroundImage {
+        background-position: center 25%;
+    }
+
+    .hero {
+        padding-bottom: 70px;
+    }
+
+    .homeHero {
+        padding-top: 100px;
+    }
+
+    .title {
+        font-size: clamp(2.6rem, 4.5vw, 3rem);
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
