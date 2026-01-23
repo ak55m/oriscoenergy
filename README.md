@@ -20,6 +20,23 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Deploy to Cloudflare Pages
+
+This project is configured for Cloudflare Pages using `@cloudflare/next-on-pages`.
+
+Recommended Pages build settings:
+
+- Build command: `npm run pages:build`
+- Build output directory: `.vercel/output/static`
+- Root directory: `/`
+
+For local Pages preview:
+
+```bash
+npm run pages:build
+npm run pages:dev
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
