@@ -55,7 +55,7 @@ const galleryItems = [
     '/gallery/gallery-055.jpg',
     '/gallery/gallery-056.jpg',
     '/gallery/gallery-058.png',
-    '/gallery/gallery-059.png',
+    '/gallery/gallery-059-v2.png',
     '/gallery/gallery-060.jpg',
     '/gallery/gallery-061.jpg',
     '/gallery/gallery-062.jpg',
