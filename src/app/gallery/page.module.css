@@ -93,9 +93,24 @@
     min-height: 280px;
 }
 
+.galleryImage:nth-child(1) {
+    background-position: center 10%;
+}
+
 .galleryImage:nth-child(5) {
     background-size: 70%;
     background-repeat: no-repeat;
+    background-position: center 10%;
+}
+
+.galleryImage:nth-child(58) {
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+}
+
+.galleryImage:nth-child(59) {
+    background-size: 115%;
     background-position: center;
 }
 

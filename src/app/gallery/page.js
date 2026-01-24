@@ -42,7 +42,7 @@ const galleryItems = [
     '/gallery/gallery-040.jpg',
     '/gallery/gallery-041.jpg',
     '/gallery/gallery-042.jpg',
-    '/gallery/gallery-043.jpg',
+    '/gallery/gallery-043.png',
     '/gallery/gallery-044.jpg',
     '/gallery/gallery-046.png',
     '/gallery/gallery-047.png',
@@ -51,11 +51,10 @@ const galleryItems = [
     '/gallery/gallery-050.jpg',
     '/gallery/gallery-051.jpg',
     '/gallery/gallery-052.png',
-    '/gallery/gallery-053.jpg',
+    '/gallery/gallery-053.png',
     '/gallery/gallery-054.jpg',
     '/gallery/gallery-055.jpg',
     '/gallery/gallery-056.jpg',
-    '/gallery/gallery-057.jpg',
     '/gallery/gallery-058.png',
     '/gallery/gallery-059.png',
     '/gallery/gallery-060.jpg',
@@ -63,7 +62,9 @@ const galleryItems = [
     '/gallery/gallery-062.jpg',
     '/gallery/gallery-063.jpg',
     '/gallery/gallery-064.jpg',
-    '/gallery/gallery-065.jpg'
+    '/gallery/gallery-065.jpg',
+    '/gallery/gallery-066.jpg',
+    '/gallery/gallery-067.jpg'
 ];
 
 export default function GalleryPage() {
