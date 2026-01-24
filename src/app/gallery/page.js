@@ -55,7 +55,7 @@ const galleryItems = [
     '/gallery/gallery-055.jpg',
     '/gallery/gallery-056.jpg',
     '/gallery/gallery-058.png',
-    // '/gallery/gallery-059.png',
+    '/gallery/gallery-059.png',
     '/gallery/gallery-060.jpg',
     '/gallery/gallery-061.jpg',
     '/gallery/gallery-062.jpg',
@@ -85,6 +85,7 @@ export default function GalleryPage() {
                             key={item}
                             className={styles.galleryImage}
                             style={{ backgroundImage: `url(${item})` }}
+                            data-src={item}
                             role="img"
                         />
                     ))}

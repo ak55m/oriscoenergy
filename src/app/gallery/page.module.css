@@ -91,8 +91,8 @@
     background-position: center 10%;
 }
 
-.galleryImage:nth-child(58) {
-    background-size: 85%;
+.galleryImage[data-src='/gallery/gallery-061.jpg'] {
+    background-size: 80%;
     background-repeat: no-repeat;
     background-position: center 10%;
 }
