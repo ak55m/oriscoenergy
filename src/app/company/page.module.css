@@ -120,9 +120,27 @@
     border: 2px solid #ccc;
 }
 
+.diversitySection {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto 4rem;
+    padding: 4rem 0;
+    background-image: url('/gallery/gallery-057.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+}
+
+.diversityInner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .diversityBlock {
     border: none;
-    background-color: #cf1111;
+    background: rgba(0, 0, 0, 0.55);
     color: var(--white);
 }
 

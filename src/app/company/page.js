@@ -126,22 +126,24 @@ export default function CompanyPage() {
                 </div>
             </section>
 
-            <section className={styles.section}>
-                <div className={styles.sectionHeader}>
-                    <h2 className={styles.diversityHeader}>DIVERSITY STATEMENT</h2>
-                </div>
-                <div className={`${styles.contentBlock} ${styles.diversityBlock}`}>
-                    <p>
-                        At Orisco Energy, we firmly believe that diversity is at the core of our success, driving innovation, creativity, and excellence in all aspects of our operations. We embrace and celebrate diversity in all its forms, including but not limited to race, ethnicity, gender, age, religion, sexual orientation, disability, and background.
-                    </p>
-                    <br />
-                    <p>
-                        We foster an inclusive environment that values the unique perspectives, experiences, and talents of our employees, partners, and stakeholders.
-                    </p>
-                    <br />
-                    <p>
-                        We are committed to creating equal opportunities, promoting a culture of respect, and ensuring fairness in our workplace. By embracing diversity, we enrich our company&apos;s culture, strengthen our performance, and better serve the diverse needs of our global community.
-                    </p>
+            <section className={`${styles.section} ${styles.diversitySection}`}>
+                <div className={styles.diversityInner}>
+                    <div className={styles.sectionHeader}>
+                        <h2 className={styles.diversityHeader}>DIVERSITY STATEMENT</h2>
+                    </div>
+                    <div className={`${styles.contentBlock} ${styles.diversityBlock}`}>
+                        <p>
+                            At Orisco Energy, we firmly believe that diversity is at the core of our success, driving innovation, creativity, and excellence in all aspects of our operations. We embrace and celebrate diversity in all its forms, including but not limited to race, ethnicity, gender, age, religion, sexual orientation, disability, and background.
+                        </p>
+                        <br />
+                        <p>
+                            We foster an inclusive environment that values the unique perspectives, experiences, and talents of our employees, partners, and stakeholders.
+                        </p>
+                        <br />
+                        <p>
+                            We are committed to creating equal opportunities, promoting a culture of respect, and ensuring fairness in our workplace. By embracing diversity, we enrich our company&apos;s culture, strengthen our performance, and better serve the diverse needs of our global community.
+                        </p>
+                    </div>
                 </div>
             </section>
         </div>
